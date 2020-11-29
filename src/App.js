@@ -1,7 +1,11 @@
+import Map from './components/Map'
+require('dotenv').config()
+
+
 function App() {
   return (
     <div>
-      <h1>Welcome to the app</h1>
+      <Map />
     </div>
   );
 }
