@@ -1,4 +1,5 @@
 import GoogleMapReact from 'google-map-react'
+import LocationMarker from './LocationMarker'
 
 const {REACT_APP_API_KEY} = process.env;
 
@@ -9,7 +10,8 @@ const Map = ({center, zoom}) => {
             bootstrapURLKeys={{key: REACT_APP_API_KEY}}
             defaultCenter={ center }
             defaultZoom={ zoom }            
-            >        
+            >
+            <LocationMarker lat={center.lat} lng={center.lng} />        
             </GoogleMapReact>
         </div>
     )

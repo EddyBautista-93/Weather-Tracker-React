@@ -9,3 +9,7 @@ body {
   position: relative;
 }
 
+.location-icon{
+  font-size: 4rem;
+  color: red;
+}
